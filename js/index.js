@@ -29,6 +29,8 @@ function encrypt(){
     //Aqui desaparece la imagen y los texto, y aparece el texto traducido
     document.getElementById("translatedTextAreaImage").style.display = "none";
     document.getElementById("translatedTextAreaTitle").style.display = "none";
+    document.getElementById("buttonCopy").style.display = "flex";
+    document.getElementById("translateText").style.justifyContent = "space-between";
     translationArea.innerText = newText;
 }
 
@@ -69,8 +71,15 @@ function decrypt(){
     //Aqui desaparece la imagen y los texto, y aparece el texto traducido
     document.getElementById("translatedTextAreaImage").style.display = "none";
     document.getElementById("translatedTextAreaTitle").style.display = "none";
+    document.getElementById("buttonCopy").style.display = "flex";
+    document.getElementById("translateText").style.justifyContent = "space-between";
     translationArea.innerText = newText;
 
+}
+
+function copyText(){
+    navigator.clipboard.writeText(translationArea.innerText);
+    translationArea.value = "";
 }
 
 
@@ -83,8 +92,10 @@ var buttonEncrypt = document.getElementById("buttonEncrypt");
 
 var buttonDecrypt = document.getElementById("buttonDecrypt");
 
-var translationArea = document.getElementById("translationArea")
+var buttonCopy = document.getElementById("buttonCopy");
 
 buttonEncrypt.onclick = encrypt;
 
 buttonDecrypt.onclick = decrypt;
+
+buttonCopy.onclick = copyText;

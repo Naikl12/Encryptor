@@ -146,9 +146,17 @@ img{
     }
 }
 
+/*Boton de copiar*/
 
-
-
+.encryptor__translated-text__button-copy{
+    display: none;
+    padding: 15px;
+    border-radius: 24px;
+    font-size: 1.6rem;
+    background-color: #FFAFCC;
+    border: 1px solid #FF006E;
+    grid-area: button2;
+}
 
 
 /*Estilos para escritorio*/
@@ -193,6 +201,11 @@ img{
     }
 
     .encryptor .encryptor__enter-text .encryptor__enter-text__buttons button:hover{
+        cursor: pointer;
+        box-shadow: #FF006E 0px 5px 15px;
+    }
+
+    .encryptor__translated-text__button-copy:hover{
         cursor: pointer;
         box-shadow: #FF006E 0px 5px 15px;
     }
