@@ -79,7 +79,7 @@ function decrypt(){
 
 function copyText(){
     navigator.clipboard.writeText(translationArea.innerText);
-    translationArea.value = "";
+    textArea.value = "";
 }
 
 
