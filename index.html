@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador</title>
+    <link rel="stylesheet" href="./style/style.css">
+</head>
+<body class="body-alura">
+
+    <header class="header-alura">
+        <a href="#">
+            <picture class="header-alura__logo">
+                <img src="./img/Logorosa.png" alt="Logo de alura">
+            </picture>
+        </a>
+    </header>
+
+    <main class="encryptor">
+        <section class="encryptor__enter-text">
+            <textarea class="encryptor__enter-text__text-area" name="text" id="textArea" cols="30" rows="10" placeholder="Ingrese el texto aquí"></textarea>
+            <div class="encryptor__enter-text__buttons">
+                <p class="encryptor__encryptor__enter-text__buttons__text-help">Sólo letras minúsculas y sin acentos.</p>
+                <button class="encryptor__enter-text__buttons__button-encrypt" id="buttonEncrypt">Encriptar</button>
+                <button class="encryptor__enter-text__buttons__button-decrypt" id="buttonDecrypt">Desencriptar</button>
+            </div>
+
+        </section>
+            
+        <section class="encryptor__translated-text">
+            <picture class="encryptor__translated-text__img-doll" id="translatedTextAreaImage">
+                <img src="./img/MuñecoRosa.png" alt="" >
+            </picture>
+            <p class="encryptor__translated-text__title" id="translatedTextAreaTitle">Ningún mensaje fue encontrado</p>
+            <p class="encryptor__translated-text__description" id="translationArea">Ingresa el texto que desees encriptar o desencriptar.</p>
+            
+        </section>
+    </main>
+
+    <footer class="contact">
+        <p class="contact__name">Naira Leal</p>
+        <p class="contact__description">ONE Oracle 2022</p>
+    </footer>
+
+    <script src="./js/index.js"></script>
+
+</body>
+</html>
