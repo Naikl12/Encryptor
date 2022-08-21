@@ -78,7 +78,7 @@ function decrypt(){
 }
 
 function copyText(){
-    navigator.clipboard.writeText(translationArea.innerText);
+    navigator.clipboard.writeText(translationArea.textContent);
     textArea.value = "";
 }
 
@@ -93,6 +93,8 @@ var buttonEncrypt = document.getElementById("buttonEncrypt");
 var buttonDecrypt = document.getElementById("buttonDecrypt");
 
 var buttonCopy = document.getElementById("buttonCopy");
+
+var translationArea = document.getElementById("translationArea");
 
 buttonEncrypt.onclick = encrypt;
 
